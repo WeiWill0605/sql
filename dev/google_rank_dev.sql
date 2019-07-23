@@ -1,0 +1,1 @@
+SELECT * FROM eventlogs.event_googlerankaction order by 1 desc;

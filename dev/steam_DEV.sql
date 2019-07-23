@@ -1,0 +1,1 @@
+select * from eventlogs.event_steampoweredaction order by 1 desc;
