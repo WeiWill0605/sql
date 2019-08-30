@@ -7,15 +7,15 @@ SELECT tid, company, job_id, job_dept, job_title, job_loc, city, country, num_jo
 
 SELECT count(1), rundate FROM pri_zwei.tech_company_job group by RunDate order by 2 desc;
 
-SELECT count(distinct company), rundate FROM pri_zwei.tech_company_job group by RunDate order by 2 desc;
 
+SELECT count(distinct company), rundate FROM pri_zwei.tech_company_job group by RunDate order by 2 desc;
 
 
 #'akamai,Splunk, ultipro'
 select * from pri_zwei.tech_company_job where company = 'cloudera' order by 1 desc;
 select * from pri_zwei.tech_company_job where company = 'Proofpoint' and RunDate = '2019-06-11 01:01:09' order by 1 desc;
 
-SELECT count(1), rundate FROM pri_zwei.tech_company_job where company = 'zendesk' group by RunDate order by 2 desc;
+SELECT count(1), rundate FROM pri_zwei.tech_company_job where company = 'etsy' group by RunDate order by 2 desc;
 
 SELECT count(1), company FROM pri_zwei.tech_company_job where RunDate = (select max(rundate) from pri_zwei.tech_company_job ) group by company order by 2 desc;
 

@@ -1,5 +1,6 @@
 select * from pri_zwei.iqiyi_play_index order by 1 desc;
-select * from pri_zwei.iqiyi_play_index where album_id = '996823500' order by 1 desc;
+select * from pri_zwei.iqiyi_play_index where album_id = '996823500' order by play_date desc;
+select count(1), count(distinct play_date) from pri_zwei.iqiyi_play_index where album_id = '996823500' order by 1 desc;
 
 select * from pri_zwei.iqiyi_play_index group by rundate  order by 1 desc;
 
