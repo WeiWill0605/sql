@@ -7,4 +7,7 @@ select * from eventlogs.event_zillowsoldaction where RunID = 3162 order by 1 des
 select * from eventlogs.event_zillowsoldaction where Subject = 'Retried all failed';
 select * from int_share_01.zillow_sold  order by 1 desc;
 
+###
+###
+
 
