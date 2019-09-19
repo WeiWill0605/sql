@@ -8,5 +8,3 @@ select * from eventlogs.event_zillowsoldaction where Subject = 'Retried all fail
 select * from int_share_01.zillow_sold  order by 1 desc;
 
 
-#ALTER TABLE `int_share_01`.`zillow_sold` 
-#ADD COLUMN `source_url` VARCHAR(500) NULL AFTER `phone`;
