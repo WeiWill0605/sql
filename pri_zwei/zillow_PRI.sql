@@ -6,7 +6,7 @@ SELECT * FROM int_share_01.zillow where property_type = 'Vacant Land' order by 1
 
 
 
-select count(1)  FROM int_share_01.zillow where rundate = '2019-07-07 20:10:10' and rstate in ('NV', 'AZ') and property_type != 'Vacant Land';
+select count(1)  FROM int_share_01.zillow where rundate = '2019-09-15 13:47:04' and rstate in ('NV', 'AZ') and property_type != 'Vacant Land';
 
 select distinct(rundate) as rundate from int_share_01.zillow order by 1 desc;
 

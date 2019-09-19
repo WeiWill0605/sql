@@ -7,8 +7,8 @@ SELECT tid, company, job_id, job_dept, job_title, job_loc, city, country, num_jo
 
 SELECT count(1), rundate FROM pri_zwei.tech_company_job group by RunDate order by 2 desc;
 
-SELECT count(distinct company), rundate FROM pri_zwei.tech_company_job group by RunDate order by 2 desc;
 
+SELECT count(distinct company), rundate FROM pri_zwei.tech_company_job group by RunDate order by 2 desc;
 
 
 #'akamai,Splunk, ultipro'

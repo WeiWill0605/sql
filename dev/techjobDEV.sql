@@ -1,7 +1,5 @@
-
-
 select * from eventlogs.event_techjobsaction order by 1 desc;
-select * from eventlogs.event_techjobsaction where runid = '9162' and SeverityId > 2 order by 1 desc;
+select * from eventlogs.event_techjobsaction where runid = '10578' and SeverityId > 2 order by 1 desc;
 
 SELECT * FROM pri_zwei.tech_company_list ;
 
