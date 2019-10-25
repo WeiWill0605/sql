@@ -1,0 +1,1 @@
+SELECT * FROM eventlogs.`event_xboxaction` ORDER BY 1 DESC;

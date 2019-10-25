@@ -11,7 +11,7 @@ select count(1), count(distinct property_id), rundate from  srs.zillow_property_
 
 
 select count(1)  FROM int_share_01.zillow where rundate = '2019-09-15 13:47:04' and zillow_owned = 1 ;
-select count(1)  FROM srs.zillow_property_detail where source_company = 'zillow';
+select count(1), count(distinct property_id)  FROM srs.zillow_property_detail where source_company = 'zillow';
 
 select * from 
 (select distinct property_id  FROM int_share_01.zillow where rundate = (select max(rundate) from int_share_01.zillow ) and zillow_owned = 1) as A 

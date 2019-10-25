@@ -1,4 +1,5 @@
 SELECT count(1), rundate FROM great_wall.netflix_plan group by rundate order by 2 desc;
+SELECT count(1), rundate FROM great_wall.netflix_plan group by rundate order by 2 desc;
 
 SELECT count(1), rundate FROM great_wall.netflix_plan_endpoint group by rundate order by 2 desc;
 
