@@ -1,12 +1,12 @@
-SELECT * FROM eventlogs.event_zillowaction order by 1 desc;
-SELECT * FROM eventlogs.event_zillowaction where RunID = '8935' order by 1 asc;
+SELECT * FROM eventlogs.event_zillowaction ORDER BY 1 DESC;
+SELECT * FROM eventlogs.event_zillowaction WHERE RunID = '8935' ORDER BY 1 ASC;
 
-SELECT * FROM eventlogs.event_zillowdetailsaction order by 1 desc;
-SELECT * FROM eventlogs.event_zillowdetailsaction where RunID = 6648  order by 1 asc;
+SELECT * FROM eventlogs.event_zillowdetailsaction ORDER BY 1 DESC;
+SELECT * FROM eventlogs.event_zillowdetailsaction WHERE RunID = 13842 AND SeverityId > 2  ORDER BY 1 ASC;
 
-SELECT * FROM eventlogs.event_zillowdetailsaction where EventID < 54 and Subject = 'failed to get property id' order by 1 desc;
+SELECT * FROM eventlogs.event_zillowdetailsaction WHERE EventID < 54 AND SUBJECT = 'failed to get property id' ORDER BY 1 DESC;
 
-SELECT * FROM srs.zillow_property_detail order by 1 desc;
-SELECT * FROM srs.zillow_property_detail where source_company = 'opendoor' order by 1 desc;
-SELECT count(1), rundate  FROM srs.zillow_property_detail group by rundate order by 2 desc;
+SELECT * FROM srs.zillow_property_detail ORDER BY 1 DESC;
+SELECT * FROM srs.zillow_property_detail WHERE source_company = 'opendoor' ORDER BY 1 DESC;
+SELECT COUNT(1), rundate  FROM srs.zillow_property_detail GROUP BY rundate ORDER BY 2 DESC;
 

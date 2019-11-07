@@ -1,6 +1,7 @@
 SELECT * FROM int_share_01.zillow  order by 1 desc;
 
 SELECT * FROM int_share_01.zillow order by RunDate asc limit 1;
+SELECT * FROM int_share_01.zillow_bk20190819 where  property_id = '2093410787'   limit 1;
 
 SELECT * FROM int_share_01.zillow where property_type = 'Vacant Land' order by 1 desc;
 
