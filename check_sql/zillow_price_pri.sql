@@ -4,6 +4,7 @@ select count(1), count(distinct(concat(property_id, event_name, event_time, pric
 
 
 select count(1), rundate from srs.zillow_price_history group by rundate  order by 2 desc ;
+select count(1), rundate from srs.zillow_property_map group by RunDate  order by 2 desc ;
 
 SELECT count(1), count(distinct concat(property_id, event_name, event_time, price)) FROM srs.zillow_price_history where price is not null  order by 1 desc;
 SELECT count(1), concat(property_id, event_name, event_time, price) FROM srs.zillow_price_history where price is not null  group by concat(property_id, event_name, event_time, price)  order by 1 desc;
