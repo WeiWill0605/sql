@@ -1,7 +1,7 @@
 select * from eventlogs.event_etsyaction order by 1 desc;
 
 select * from eventlogs.event_instagramprofileaction order by 1 desc;
-select count(1) from eventlogs.event_instagramprofileaction where  RunID = 6081 and SeverityID > 2  order by 1 desc; 
+select * from eventlogs.event_instagramprofileaction where  RunID = 15275 and SeverityID > 2  order by 1 desc; 
 
 select * from eventlogs.event_etsyaction where runid = 5679 and Subject = 'shop does not exits' order by 1 desc;
 select * from eventlogs.event_instagramprofileaction  order by 1 desc;

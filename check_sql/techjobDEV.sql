@@ -18,6 +18,7 @@ SELECT * FROM pri_zwei.tech_company_list;
 
 
 select * from pri_zwei.tech_company_job order by 1 desc;
+select count(1) from pri_zwei.tech_company_job where rundate = '2019-11-17 20:32:35' order by 1 desc;
 
 select * from pri_zwei.techjobs_product where company = '' and country is null order by 1 desc;
 

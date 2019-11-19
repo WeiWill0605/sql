@@ -1,0 +1,1 @@
+select * from event_googletrendsaction order by 1 desc

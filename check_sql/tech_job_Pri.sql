@@ -15,7 +15,7 @@ SELECT count(distinct company), rundate FROM pri_zwei.tech_company_job group by 
 
 
 #'akamai,Splunk, ultipro'
-select * from pri_zwei.tech_company_job where company = 'cloudera' order by 1 desc;
+select * from pri_zwei.tech_company_job where company = 'google' order by 1 desc;
 select * from pri_zwei.tech_company_job where company = 'Proofpoint' and RunDate = '2019-06-11 01:01:09' order by 1 desc;
 
 SELECT count(1), rundate FROM pri_zwei.tech_company_job where company = 'etsy' group by RunDate order by 2 desc;

@@ -1,5 +1,6 @@
 select * from srs.zillow_price_history order by 1 desc ;
 
+
 select count(1), count(distinct(concat(property_id, event_name, event_time, price))) from srs.zillow_price_history where rundate >= '2019-08-13 13:01:10' order by 1 desc ;
 
 
