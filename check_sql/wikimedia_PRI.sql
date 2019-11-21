@@ -1,5 +1,6 @@
 SELECT * FROM srs.wikimedia_article order by 1 desc;
 SELECT count(1), rundate  FROM srs.wikimedia_article group by rundate  order by 2 desc;
+SELECT count(1), count(distinct article, category)  FROM srs.wikimedia_article;
 SELECT count(1), count(distinct article)  FROM srs.wikimedia_article;
 
 SELECT * FROM srs.wikimedia_view_count order by 1 desc;
