@@ -31,4 +31,4 @@ select * from
 (select distinct company FROM pri_zwei.tech_company_job where rundate = '2019-07-09 09:38:36') as B on A.company = B.company where a.company is null;
 
 
-###### update pri_zwei.tech_company_job set rundate = '2019-11-05 01:19:10' where rundate = '2019-11-05 14:18:36'
+###### update pri_zwei.tech_company_job set rundate = '2019-12-10 01:19:06' where rundate = '2019-12-10 15:02:30'
